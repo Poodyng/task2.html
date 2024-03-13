@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+body {
+  font-style: normal;
+  font-weight: normal;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.header__popup {
+  display: block;
+  position: relative;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  top: -999px;
+}
+
+.header__popup::before {
+  content: '';
+  background-color: #7c7b7a;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.header #open:checked ~ .header__popup {
+  display: block;
+  padding-top: 50px;
+  top: 0;
+}
+
+.header #open:checked ~ .header__popup::before {
+  opacity: 1;
+}
+
+.header #open {
+  display: none;
+}
+
+.header__items {
+  background-color: #a750a2;
+  padding: 0 15px 20px 10px;
+}
+
+.header__header-btn {
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: aqua;
+  color: #bebebe;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+
+.header__header-btn:hover {
+  cursor: pointer;
+  background-color: #bebebe;
+  color: #000;
+}
+
+.header__block-header {
+  padding-bottom: 10px;
+}
+
+.header__title {
+  padding-bottom: 2px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-bottom: 1px solid #FFF;
+}
+
+.header__form-card {
+  margin-bottom: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65px 390px;
+      grid-template-columns: 65px 390px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__box {
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.header__item-input {
+  color: #bebebe;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__sub-title {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__box-two-form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 180px 0;
+      grid-template-columns: 180px 0;
+  gap: 60px;
+}
+
+.header__two-form-card {
+  margin-bottom: 10px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 65px 150px;
+      grid-template-columns: 65px 150px;
+}
+
+.header__card-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #FFF;
+  color: #000;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.header__button:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #FFF;
+  outline: 1px solid #FFF;
+}
+
+.header__two-button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #5c5cdb;
+  color: #FFF;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.header__two-button:hover {
+  cursor: pointer;
+  background-color: #FFF;
+  outline: 1px solid #fff;
+  color: #5c5cdb;
+}
+/*# sourceMappingURL=common.css.map */
